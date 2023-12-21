@@ -1,0 +1,207 @@
+
+/*/*/*/*/*/*                FAIRE SPAWN UN CAMION MS3 BLEU                 */*/*/*/*/*/
+/*/*/*/*/*/*           ATTENTION IL NE S'AGIT QUE D'UN EXEMPLE.            */*/*/*/*/*/
+
+
+Vous pouvez faire spawn le type de véhicule que vous souhaitez avec sa couleur et le contenu que vous désirez.
+Dans l'exemple ci-dessous, je demande à faire apparaître à chaque restart du serveur un MS3 de couleur bleu,
+équipé de la totalité des items (rondins de bois, plaques métalliques, barils, planches de bois,...)
+
+
+---- Dans le fichier event.xml ----
+
+<!-- MS3 FULL -->
+<event name="VehicleTruck01full">
+		<nominal>1</nominal>
+		<min>1</min>
+		<max>1</max>
+		<lifetime>3888000</lifetime>
+		<restock>0</restock>
+		<saferadius>500</saferadius>
+		<distanceradius>500</distanceradius>
+		<cleanupradius>200</cleanupradius>
+		<flags deletable="0" init_random="0" remove_damaged="1"/>
+		<position>fixed</position>
+		<limit>mixed</limit>
+		<active>1</active>
+		<children>
+			<child lootmax="0" lootmin="0" max="1" min="1" type="Truck_01_Covered_Blue"/>
+		</children>
+</event>		
+	
+	
+---- Dans le fichier cfgeventspawns.xml ----
+		
+
+<!-- MS3 FULL -->
+<event name="VehicleTruck01full">
+	<pos x="13425 " z="6550" y="3.4"  a="0" />
+</event>
+	
+	
+---- Dans le fichier cfgspwanabletypes.xml ----
+	
+	
+<!-- CONTENU DU MS3  -->
+<type name="Truck_01_Covered_Blue">
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Hood_Blue" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Door_1_1_Blue" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Door_2_1_Blue" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="SparkPlug" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="TruckBattery" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenLog" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenLog" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenPlank" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenPlank" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenPlank" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenPlank" chance="1.00" />
+		</attachments>
+
+		<attachments chance="1.00">
+			<item name="MetalPlate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalPlate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalPlate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalPlate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Green" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Green" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Green" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Green" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CanisterGasoline" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hammer" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hammer" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Shovel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Shovel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pliers" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Rope" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Rope" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="FenceKit" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HandSaw" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodAxe" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="VehicleKeyBlack" chance="1.00" />
+		</attachments>
+</type>
